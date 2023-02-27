@@ -372,7 +372,8 @@
                         <input 
                         type="text" 
                         class="modal-input"
-                        name="Name"/>
+                        name="Name"
+                        required/>
                         <svg class="modal-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg>
@@ -384,7 +385,10 @@
                         <input 
                         type="tel" 
                         class="modal-input"
-                        name="Email"/>
+                        name="Email"
+                        minlength="10"
+                        maxlength="13"
+                        required/>
                         <svg class="modal-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-tel"></use>
                         </svg>
@@ -395,7 +399,8 @@
                    <div class="input-wrap">
                         <input 
                         type="email" 
-                        class="modal-input"/>
+                        class="modal-input"
+                        required/>
                         <svg class="modal-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
@@ -411,6 +416,7 @@
                   id="policy"
                   type="checkbox"
                   value="true"
+                  required
                 />
                 <label class="check-text" for="policy">
                   I accept the terms and conditions of the <a href="#" class="privacy-policy"> Privacy Policy<a ></label
